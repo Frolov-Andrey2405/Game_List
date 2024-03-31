@@ -1,0 +1,29 @@
+# Use the official Node.js image
+FROM node:14 as build
+
+# Set the working directory in the container
+WORKDIR /app
+
+# Copy the package.json and package-lock.json files inside the container
+COPY package*.json ./
+
+# Install dependencies
+RUN npm install
+
+# Copy everything else inside the container
+COPY . .
+
+# Build our React application
+RUN npm run build
+
+# Use the official nginx image for the prodxsh build
+FROM nginx:1.21-alpine
+
+# Copy the build folder from the previous stage to thenginx server
+COPY --from=build /app/build /usr/share/nginx/html
+
+# Open port 80 for the nginx server
+EXPOSE 80
+
+# Start the nginx server
+CMD ["nginx", "-g", "daemon off;"]
