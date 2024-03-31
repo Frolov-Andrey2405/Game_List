@@ -27,7 +27,7 @@ const GAMES = [
     price: "$50", 
     inWishList: true, 
     name: "Grand theft auto V",
-    images: ['https://cdn.akamai.steamstatic.com/steam/apps/271590/capsule_616x353.jpg?t=1678296348', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrk3OGuWix5cqDqgMoE8EXbAG6R3JCDCUwZQ&usqp=CAU', 'https://testingbuddies.de/wp-content/uploads/2022/04/GTAV_Gen9_005.jpg']
+    images: ['https://cdn.akamai.steamstatic.com/steam/apps/271590/capsule_616x353.jpg?t=1678296348', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrk3OGuWix5cqDqgMoE8EXbAG6R3JCDCUwZQ&usqp=CAU', 'https://cdn.akamai.steamstatic.com/steam/apps/271590/ss_ea78dfa1d7d81c3781287cab165f64ca70f1f2ea.600x338.jpg?t=1711059470']
   },
 ];
 
