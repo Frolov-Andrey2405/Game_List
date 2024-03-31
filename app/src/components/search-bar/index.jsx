@@ -20,7 +20,7 @@ export default function SearchBar({
                     checked={inWhishListOnly}
                     onChange={(e) => oninWhishListOnlyChange(e.target.checked)}
                 />
-                Only on the wish list
+                Only in the desired
             </label>
         </form>
     );
